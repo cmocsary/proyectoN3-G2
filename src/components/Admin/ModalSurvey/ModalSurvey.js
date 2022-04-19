@@ -22,6 +22,7 @@ const ModalSurvey = ({ handleChange, showMS, handleCloseMS }) => {
                 placeholder="?"
                 autoFocus
                 name="questions"
+                required
               />
             </Form.Group>
             <Modal.Footer>

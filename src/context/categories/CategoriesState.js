@@ -75,8 +75,6 @@ const CategoriesState = ({children}) => {
 
       const updateCategory = async(id, data)=>{
         try {
-          console.log(id);
-          console.log(data);
           await axios.put(URL_CATEGORIES+id, data)
           dispatch({
             type: UPDATE_CATEGORIES,

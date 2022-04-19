@@ -72,7 +72,7 @@ const FormSurveyDetail = () => {
       </Row>
     </Container>
   ) : (
-    <Container>
+    <Container className="py-3">
       <Form>
         <div className="borderM p-4">
           <ButtonsForAdmin surveySelected={surveySelected} values={values} />

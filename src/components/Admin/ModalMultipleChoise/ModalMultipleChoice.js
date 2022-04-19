@@ -25,6 +25,7 @@ const ModalMultipleChoice = ({ handleChange, showMC, handleCloseMC }) => {
                 placeholder="?"
                 autoFocus
                 name="questions"
+                required
               />
               <hr></hr>
               <h5>Posibles respuestas</h5>
@@ -39,6 +40,7 @@ const ModalMultipleChoice = ({ handleChange, showMC, handleCloseMC }) => {
                 placeholder="Respuesta"
                 autoFocus
                 name="response"
+                required
               />
             </Form.Group>
             <Form.Group
@@ -51,6 +53,7 @@ const ModalMultipleChoice = ({ handleChange, showMC, handleCloseMC }) => {
                 placeholder="Respuesta"
                 autoFocus
                 name="response"
+                required
               />
             </Form.Group>
             <Form.Group
@@ -63,6 +66,7 @@ const ModalMultipleChoice = ({ handleChange, showMC, handleCloseMC }) => {
                 placeholder="Respuesta"
                 autoFocus
                 name="response"
+                required
               />
             </Form.Group>
             <Form.Group
@@ -75,6 +79,7 @@ const ModalMultipleChoice = ({ handleChange, showMC, handleCloseMC }) => {
                 placeholder="Respuesta"
                 autoFocus
                 name="response"
+                required
               />
             </Form.Group>
             <Modal.Footer>

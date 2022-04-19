@@ -59,7 +59,7 @@
     },
     {
       "name": "Guerra Ucrania - Rusia",
-      "state": false,
+      "state": true,
       "questions": [
         {
           "question": "Quien tiene la razón?",
@@ -68,18 +68,6 @@
       ],
       "category": "Educación",
       "id": 3
-    },
-    {
-      "name": "Argentina",
-      "state": false,
-      "questions": [
-        {
-          "question": "Quien gana?",
-          "response": []
-        }
-      ],
-      "category": "Politica",
-      "id": 5
     }
   ],
   "categories": [
@@ -90,9 +78,9 @@
       "bgColor": "--fuchsia-rose"
     },
     {
-      "id": "2",
       "name": "Salud",
-      "state": true
+      "state": true,
+      "id": "2"
     }
   ]
 }

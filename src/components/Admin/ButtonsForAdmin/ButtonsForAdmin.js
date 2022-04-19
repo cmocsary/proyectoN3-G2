@@ -15,8 +15,8 @@ const ButtonsForAdmin = ({ surveySelected, values }) => {
       return {state: true}
     }
   }
-
-  return location.pathname == "/surveydetail/:id" ? (
+console.log(location.pathname);
+  return location.pathname != "/admin" ? (
     <div className="d-flex justify-content-end">
       <Button
         className="m-1"
@@ -33,11 +33,13 @@ const ButtonsForAdmin = ({ surveySelected, values }) => {
         Modificar
       </Button>
       <Button
-        className={
-          surveySelected.state
-            ? "me-2 spanSurvaysCardsTrue btnStateTrue p-1"
-            : "me-2 spanSurvaysCardsFalse btnStateFalse p-1"
-        }
+        className="m-1"
+        variant={
+          surveySelected.state?(
+            "warning"
+          ) : (
+            "secondary"
+          )}
         onClick={() =>
           updateSurveys(surveySelected.id, publicado(surveySelected.state))
         }

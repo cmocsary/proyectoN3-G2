@@ -36,6 +36,7 @@ const ModalNewCategory = ({ show, handleClose }) => {
                 name="name"
                 onChange={handleChange}
                 autoFocus
+                required
               />
             </Form.Group>
             <Form.Switch

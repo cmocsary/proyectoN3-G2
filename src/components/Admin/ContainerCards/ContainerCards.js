@@ -19,11 +19,7 @@ const ContainerCards = ({ location }) => {
       {surveys?.map((survey, index) => (
         <Col lg="3" key={index}>
           <SurveysCards
-            id={survey.id}
-            name={survey.name}
-            state={survey.state}
-            category={survey.category}
-            questions={survey.questions}
+            survey={survey}
           />
           {admin ? <ButtonsForAdmin surveySelected={survey} /> : null}
         </Col>
